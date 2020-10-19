@@ -1,0 +1,11 @@
+name: 'Invalidate Cloudfront Cache'
+description: 'Github action for invalidate cache from one or more Cloudfront Distributions'
+author: 'Thiago Rocha'
+branding:
+  icon: 'cloud-lightning'
+  color: 'orange'
+
+runs:
+  using: docker
+  image: Dockerfile
+   
