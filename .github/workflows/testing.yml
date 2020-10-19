@@ -1,9 +1,9 @@
-name: Upload whitelabel to S3 bucket
+name: test workflow
 
 on:
   push:
     branches:
-    - master
+     - master
 
 jobs:
   test:
