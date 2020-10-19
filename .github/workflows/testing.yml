@@ -24,7 +24,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Invalidate cloudfront
         uses: thiagocerq/cloudfront-invalidations@v1
-        args:
+        env:
           DISTRIBUTIONS_FILE: s3://cloudfront-dists/distributions.txt
           PATHS: '/index.html'
           AWS_REGION: 'us-east-1'
