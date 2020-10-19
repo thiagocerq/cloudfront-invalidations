@@ -1,9 +1,9 @@
-ame: Upload arbosite to test server
+name: Upload arbosite to test server
 
 on:
   push:
     branches:
-    - testing
+     - master
 
 jobs:
   build-arbo:
