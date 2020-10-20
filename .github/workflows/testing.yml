@@ -25,7 +25,7 @@ jobs:
       - name: Invalidate cloudfront
         uses: thiagocerq/cloudfront-invalidations@v1
         env:
-          DISTRIBUTIONS_FILE: s3://cloudfront-dists/distributions.txt
+          DISTRIBUTIONS_FILE: cloudfront-dists/distributions.txt
           PATHS: '/index.html'
           AWS_REGION: 'us-east-1'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
